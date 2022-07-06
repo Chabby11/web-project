@@ -1,0 +1,32 @@
+
+<h2>Patient Table</h2>
+<table class="table">
+    <thead>
+      <tr style="background-color: grey;">
+        <th scope="col">SN</th>
+        <th scope="col">First_name</th>
+        <th scope="col">patient_second_name</th>
+        <th scope="col">Last_name</th>
+        <th scope="col">address</th>
+        <th scope="col">phone_number</th>
+        <th scope="col">gender</th>
+        <th>action</th>
+      </tr>
+    </thead>
+    <tbody style="background-color: grey;">
+      <tr *ngFor="let x of patientss">
+        <td>{{x.id}}</td>
+        <td>{{x.patient_name}}</td>
+        <td>{{x.patient_second_name}}</td>
+        <td>{{x.patient_last_name}}</td>
+        <td>{{x.address}}</td>
+        <td>{{x.phone_number}}</td>
+        <td>{{x.gender}}</td>
+          <button (click) ="update(x.id)" class="btn btn-primary">update</button>
+  <button (click) ="delete(x.id)" class="btn btn-danger">delete</button>
+        
+     
+    </tbody>
+  </table>
+ 
+  <router-outlet></router-outlet>

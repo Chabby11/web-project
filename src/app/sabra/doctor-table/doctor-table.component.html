@@ -1,0 +1,71 @@
+<h2>Doctor Table</h2>
+<table class="doctor-table">
+    <thead>
+      <tr style="background-color: grey;">
+        <th scope="col">SN</th>
+        <th scope="col">_doctor_first_name</th>
+        <th scope="col">second_name</th>
+        <th scope="col">last_name</th>
+        <th scope="col">name of ----name_of_tablets----</th>
+        <th scope="col">date</th>
+        <th scope="col">how_to_use_medicine</th>
+        <th scope="col">dose</th>
+        <th scope="col">phone_number</th>
+        <th scope="col">possible_side_effect</th>
+        <th>action</th>
+      </tr>
+    </thead>
+    <tbody style="background-color: grey;">
+      <tr>
+        <tr *ngFor="let x of doctors">
+          <td>{{x.id}}</td>
+          <td>{{x.doctor_first_name}}</td>
+          <td>{{x.second_name}}</td>
+          <td>{{x.last_name}}</td>
+          <td>{{x.how_to_use_medicine}}</td>
+          <td>{{x.date}}</td>
+          <td>{{x.dose}}</td>
+          <td>{{x.phone_number}}</td>
+          <td>{{x.possible_side_effect}}</td>
+        <td>
+          <button class="btn btn-primary">update</button>
+  <button class="btn btn-danger">delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>jangombe</td>
+        <td>07865430</td>
+        <td>male</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>
+          <button class="btn btn-primary">update</button>
+  <button class="btn btn-danger">delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>mbweni</td>
+        <td>0633769</td>
+        <td>male</td>
+        <td> </td>
+        <td></td>
+        <td> </td>
+        <td> </td>
+        <td>
+          <button class="btn btn-primary">update</button>
+  <button class="btn btn-danger">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ 
+  <router-outlet></router-outlet>
+

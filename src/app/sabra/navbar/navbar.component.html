@@ -1,0 +1,26 @@
+<div class="container-fluid" style="margin: 0;">
+    <div class="bg bg-dark">
+      <ul class="nav nav-tabs" >
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/home']">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/login']">LOGIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/patient']">PATIENT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  [routerLink]="['/doctor']">DOCTOR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  [routerLink]="['/table']">VIEW</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['/Doctor-Table']">REPORT</a>
+          </li>
+
+      </ul>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

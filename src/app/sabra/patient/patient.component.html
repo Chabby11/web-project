@@ -1,0 +1,81 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-md-12">
+            <div class="card" style="background-color: grey;">
+                <div class="card-header">
+                    <H2 class="text-center">PATIENT PRESCRIPTION</H2>
+                </div>
+                <div class="card-body">
+                    <form [formGroup] ="insert"  (ngSubmit) ="submit()">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="text" formControlName ="patient_name"
+                                    
+                                    class="form-control" placeholder ="patient_name">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="text" formControlName ="patient_second_name" class="form-control" placeholder="patient_second_name">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="text" formControlName ="patient_last_name" class="form-control" placeholder="patient_last_name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="text" formControlName ="address" class="form-control" placeholder="address">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="text" formControlName ="phone_number" class="form-control" placeholder="phone_number">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="text" formControlName ="age" class="form-control" placeholder="age">
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <input class="form-control" formControlName ="date"  type="date" name="" id="">
+                                </div>
+                            </div>
+                        <div class="row">
+                           <div class="form-row">
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="rtypes" class="">gender</label>
+                
+                                    <div class="form-check">
+                                        <input class="form-check-input" formControlName ="gender" type="radio" id="male" value="male" checked>
+                                        <label class="form-check-label" for="radiobutton1">
+                                            male
+                                        </label>
+                                    </div>
+                
+                                    <div class="form-check">
+                                        <input class="form-check-input" formControlName ="gender" type="radio" id="female"
+                                               value="female">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            female
+                                        </label>
+                                        <button type="submit" class="btn btn-primary">submit</button>
+                                    </div>               
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
